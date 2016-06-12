@@ -47,13 +47,13 @@ var instanceReflector = testReflector.Bind().Public.NonPublic.SetInstance(obj).G
 
 //キャストも不要です。
 
-instanceReflector.Property<int>("Id").Value = 10;
+instanceReflector.Property&lt;int&gt;("Id").Value = 10;
 
-instanceReflector.Property<string>("Name").Value = "Rydia";
+instanceReflector.Property&lt;string&gt;("Name").Value = "Rydia";
 
-instanceReflector.Property<string>("Address").Value = "Japan";
+instanceReflector.Property&lt;string&gt;("Address").Value = "Japan";
 
-instanceReflector.Property<List<int>>("Scores").Value = Enumerable.Range(1, 5).ToList();
+instanceReflector.Property&lt;List&lt;int&gt;&gt;("Scores").Value = Enumerable.Range(1, 5).ToList();
 
 instanceReflector.Field<SampleEnum>("MyEnum").Value = SampleEnum.Sample2;
 
