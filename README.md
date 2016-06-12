@@ -139,7 +139,7 @@ Console.WriteLine("プロパティ名: {0}", info.Name);
 
 //AccessReflector.IndexerExactメソッドから取得します。
 
-//戻り値はPropertyReflectorなのでValueプロパティで読み書きできます。
+//戻り値はIndexerReflectorでValueプロパティで読み書きできます。
 
 //なおまだαバージョンなので、メンバの検索とかの実装は今後アプデしていきます。。
 
