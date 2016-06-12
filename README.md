@@ -9,7 +9,7 @@ ReflectionManager.SampeleConsole.Program.csから抜粋
 
 //今回はオブジェクト生成するので作成してます。
 
-var testReflector = new TypeReflector<SampleObject>();
+var testReflector = new TypeReflector&lt;SampleObject&gt;();
 
 //オブジェクトの生成: パラメータを指定すれば自動的に検索します。
 
