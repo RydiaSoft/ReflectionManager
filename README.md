@@ -1,6 +1,5 @@
 # ReflectionManager
 リフレクションを簡単に行うためのライブラリです
-//型のリフレクターをまず作成します。
 
 ReflectionManager.SampeleConsole.Program.csから抜粋
 
