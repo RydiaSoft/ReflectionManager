@@ -55,7 +55,7 @@ instanceReflector.Property&lt;string&gt;("Address").Value = "Japan";
 
 instanceReflector.Property&lt;List&lt;int&gt;&gt;("Scores").Value = Enumerable.Range(1, 5).ToList();
 
-instanceReflector.Field<SampleEnum>("MyEnum").Value = SampleEnum.Sample2;
+instanceReflector.Field&lt;SampleEnum&gt;("MyEnum").Value = SampleEnum.Sample2;
 
 //Valueはプロパティにしてあるため、読み書き両方対応してあります。
 
@@ -69,13 +69,13 @@ Equals(target, obj, "trueなら成功");
 
 //(このサンプルではパブリックメンバ・ノンパブリックメンバをバインドしてるため)
 
-instanceReflector.Field<int>("m_Value").Value = 300;
+instanceReflector.Field&lt;int&gt;("m_Value").Value = 300;
 
 Equals(target, obj, "falseなら成功");
 
 //メソッドの呼び出しも可能です
 
-var result = instanceReflector.Method<bool>("Equals", target).Invoke();
+var result = instanceReflector.Method&lt;bool&gt;("Equals", target).Invoke();
 
 Console.WriteLine("メソッドの戻り値: {0} :falseなら成功", result);
 
@@ -85,11 +85,11 @@ Console.WriteLine("メソッドの戻り値: {0} :falseなら成功", result);
 
 //たとえば、前に呼び出したNameプロパティに対して
 
-instanceReflector.Property<string>("Name").Value = "Rydia0000";
+instanceReflector.Property&lt;string&gt;("Name").Value = "Rydia0000";
 
-instanceReflector.Property<string>("Name").Value = "Rydia1111";
+instanceReflector.Property&lt;string&gt;("Name").Value = "Rydia1111";
 
-instanceReflector.Property<string>("Name").Value = "Rydia";
+instanceReflector.Property&lt;string&gt;("Name").Value = "Rydia";
 
 //と複数回アクセスしても、再度メンバー検索したりすることはありません。
 
@@ -111,7 +111,7 @@ var staticReflector = testReflector.Bind().Public.NonPublic.Static.GenerateAcces
 
 //var instanceReflector2 = instanceReflector.ToInstance(target);
 
-var number = staticReflector.Property<int>("Number"); // 値を取得
+var number = staticReflector.Property&lt;int&gt;("Number"); // 値を取得
 
 WriteNumber(number);        //比較表示
 
