@@ -1,0 +1,5 @@
+D:\Users\Micksoft\Documents\GitHub\ReflectionManager\ReflectionManager\bin\Debug\ReflectionManager.dll
+D:\Users\Micksoft\Documents\GitHub\ReflectionManager\ReflectionManager\bin\Debug\ReflectionManager.pdb
+D:\Users\Micksoft\Documents\GitHub\ReflectionManager\ReflectionManager\obj\Debug\ReflectionManager.dll
+D:\Users\Micksoft\Documents\GitHub\ReflectionManager\ReflectionManager\obj\Debug\ReflectionManager.pdb
+D:\Users\Micksoft\Documents\GitHub\ReflectionManager\ReflectionManager\obj\Debug\ReflectionManager.csprojResolveAssemblyReference.cache
